@@ -34,7 +34,9 @@
             this.B = new System.Windows.Forms.Button();
             this.A = new System.Windows.Forms.Button();
             this.scroller = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            this.scroller.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,11 +108,23 @@
             // scroller
             // 
             this.scroller.BackColor = System.Drawing.Color.White;
+            this.scroller.Controls.Add(this.textBox1);
+            this.scroller.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scroller.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.scroller.Location = new System.Drawing.Point(258, 0);
             this.scroller.Name = "scroller";
-            this.scroller.Size = new System.Drawing.Size(23, 95);
+            this.scroller.Size = new System.Drawing.Size(34, 95);
             this.scroller.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.textBox1.Location = new System.Drawing.Point(0, 65);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(34, 30);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "0";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
@@ -122,6 +136,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
+            this.scroller.ResumeLayout(false);
+            this.scroller.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -134,6 +150,7 @@
         private System.Windows.Forms.Button A;
         private System.Windows.Forms.Button D;
         private System.Windows.Forms.Button C;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
